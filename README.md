@@ -33,4 +33,7 @@
 
    ```bash
    git clone https://github.com/lina4ka-malina4ka/zakrivayuschiy-teg-f.git
+2. Перейти на сайт:
+
+   https://lina4ka-malina4ka.github.io/zakrivayuschiy-teg-f/
    
