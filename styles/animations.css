@@ -10,13 +10,13 @@
 
 */
 
-@keyframes filter-image {
+@keyframes imageHueRotate {
   to {
     filter: hue-rotate(360deg);
   }
 }
 
-@keyframes like {
+@keyframes heartPulse {
   from {
     transform: scale(1.25);
   }
@@ -25,7 +25,7 @@
   }
 }
 
-@keyframes sparks {
+@keyframes sparksFadeIn {
   from {
     opacity: 0;
   }
