@@ -20,31 +20,35 @@
   background-size: cover;
   background-attachment: fixed;
   background-repeat: repeat;
-  display: flex;
+    display: flex;
   flex-direction: column;
-  /* align-items: center; удалили */
+  align-items: center;
   width: 100%;
-  gap: 50px;
-  margin: 0 auto;
+  /* gap: 50px; */
 }
 
 .header {
-  margin-block: 98px 47px;
+  margin-block: 100px 94px;
   padding-inline: clamp(16px, calc(10vw - 21.5px), 122.5px);
   padding-block: clamp(122px, calc(0.751vw + 119.18px), 130px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: var(--accent-family, monospace);
   text-transform: uppercase;
-  color: var(--accent-color,#000);
+}
+
+.header,
+.card__label,
+.button__text,
+.dialog__text {
+  font-family: var(--accent-family, monospace);
   font-weight: var(--regular-wght, 400);
+  color: var(--accent-color, #000);
 }
 
 .container {
   inline-size: clamp(375px, calc(30.52vw + 260.56px), 700px);
-  margin-inline: auto;
 }
 
 .frame {
@@ -168,10 +172,13 @@
   padding: 0 25px 25px 0;
 }
 
-.card__icon-button {
-  display: flex;
+.button {
+  display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+.card__icon-button {
   border: 2px solid transparent;
   transition: border-color 0.3s ease;
   background-color: transparent;
@@ -179,9 +186,7 @@
   padding: 0;
 }
 
-.card__button-decor {
-  border: 2px solid var(--accent-color, #000);
-  background: var(--stroke-color, #fff);
+.button-decor {
   transition: box-shadow 0.3s ease;
   color: var(--accent-color, #000);
   position: relative;
@@ -191,39 +196,29 @@
 .decor-like-button {
   inline-size: 130px;
   block-size: 38px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .button__text {
-  font-family: var(--accent-family, monospace);
-  font-weight: var(--regular-wght, 400);
-  font-size: 14px;
   line-height: 90%;
-  color: var(--accent-color, #000);
-}
+  font-size: 14px;
+ }
 
 .main__dialog-button-wrapper {
-  /* margin-block-end: 50px; */
+  margin-block-end: 100px;
   display: flex;
   justify-content: center;
 }
 
 .decor-save-button {
   padding: 15px 19px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 9px;
 }
 
 /* dialog */
 
 .dialog {
-    display: none;
+  display: none;
   padding: 28px;
-  border: 2px solid var(--accent-color, #000);
   flex-direction: column;
   gap: 30px;
 }
@@ -249,12 +244,9 @@ dialog::backdrop {
 
 .dialog__text {
   inline-size: 234px;
-  font-family: var(--accent-family, monospace);
-  font-weight: var(--regular-wght, 400);
-  font-size: 14px;
   line-height: 150%;
   text-transform: uppercase;
-  color: var(--accent-color, #000);
+   font-size: 14px;
 }
 
 .decor-ok-button {
@@ -275,12 +267,11 @@ dialog::backdrop {
   border-color: var(--accent-color, #000);
 }
 
-.card__button-decor:focus-visible {
-  outline: none;
+.button-decor:focus-visible {
   box-shadow: 2px 2px 0 var(--accent-color, #000);
 }
 
-.card__button-decor::before {
+.button-decor::before {
   z-index: 0;
   content: "";
   position: absolute;
@@ -290,19 +281,19 @@ dialog::backdrop {
   transition: transform 0.5s ease-in-out;
 }
 
-.card__button-decor:hover::before {
+.button-decor:hover::before {
   transform: translateX(0);
 }
 
-.card__button-decor .button__text,
-.card__button-decor .card__save-icon {
+.button-decor .button__text,
+.button-decor .card__save-icon {
   position: relative;
   z-index: 1;
   mix-blend-mode: difference;
   color: var(--stroke-color, #fff);
 }
 
-.card__save-button .card__save-icon {
+.decor-save-button .card__save-icon {
   width: 21px;
   height: 21px;
   display: block;
@@ -405,7 +396,7 @@ dialog::backdrop {
     flex-direction: column;
 }
 
-  .card__save-button .card__save-icon {
+  .decor-save-button .card__save-icon {
     width: 28px;
     height: 28px;
   }
