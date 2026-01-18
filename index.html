@@ -15,9 +15,9 @@
   </head>
   <body class="page">
     <header class="header container frame">
-              <h1 class="header__title">&lt;/html&gt;</h1>
-        <p class="header__description">закрывающий тег</p>
-      </header>
+      <h1 class="header__title">&lt;/html&gt;</h1>
+      <p class="header__description">закрывающий тег</p>
+    </header>
     <main class="main">
       <!-- карточка 1 -->
       <article class="card container frame">
@@ -42,9 +42,13 @@
           <p class="card__text">Мне было страшно и волнительно, но интересно</p>
         </div>
         <div class="card__button-wrapper">
-          <button class="card__icon-button button" type="button" aria-label="Лайк">
+          <button
+            class="card__icon-button button"
+            type="button"
+            aria-label="Лайк"
+          >
             <svg
-            aria-hidden="true"
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -110,9 +114,13 @@
           </p>
         </div>
         <div class="card__button-wrapper">
-          <button class="card__icon-button button" type="button" aria-label="Лайк">
+          <button
+            class="card__icon-button button"
+            type="button"
+            aria-label="Лайк"
+          >
             <svg
-            aria-hidden="true"
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -176,9 +184,13 @@
           </p>
         </div>
         <div class="card__button-wrapper">
-          <button class="card__icon-button button" type="button" aria-label="Лайк">
+          <button
+            class="card__icon-button button"
+            type="button"
+            aria-label="Лайк"
+          >
             <svg
-            aria-hidden="true"
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -244,9 +256,13 @@
           </p>
         </div>
         <div class="card__button-wrapper">
-          <button class="button card__icon-button" type="button" aria-label="Лайк">
+          <button
+            class="button card__icon-button"
+            type="button"
+            aria-label="Лайк"
+          >
             <svg
-            aria-hidden="true"
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -313,9 +329,13 @@
           </p>
         </div>
         <div class="card__button-wrapper">
-          <button class="card__icon-button button" type="button" aria-label="Лайк">
+          <button
+            class="card__icon-button button"
+            type="button"
+            aria-label="Лайк"
+          >
             <svg
-            aria-hidden="true"
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -379,9 +399,13 @@
           </p>
         </div>
         <div class="card__button-wrapper">
-          <button class="card__icon-button button" type="button" aria-label="Лайк">
+          <button
+            class="card__icon-button button"
+            type="button"
+            aria-label="Лайк"
+          >
             <svg
-            aria-hidden="true"
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -447,9 +471,13 @@
           </p>
         </div>
         <div class="card__button-wrapper">
-          <button class="card__icon-button button" type="button" aria-label="Лайк">
+          <button
+            class="card__icon-button button"
+            type="button"
+            aria-label="Лайк"
+          >
             <svg
-            aria-hidden="true"
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -517,9 +545,13 @@
           </p>
         </div>
         <div class="card__button-wrapper">
-          <button class="card__icon-button button" type="button" aria-label="Лайк">
+          <button
+            class="card__icon-button button"
+            type="button"
+            aria-label="Лайк"
+          >
             <svg
-            aria-hidden="true"
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -559,9 +591,9 @@
           </button>
         </div>
       </article>
-    
-    <!-- кнопка "сохранить на память" и dialog -->
-         <div class="main__dialog-button-wrapper">
+
+      <!-- кнопка "сохранить на память" и dialog -->
+      <div class="main__dialog-button-wrapper">
         <button
           class="button-decor decor-save-button button frame"
           type="button"
@@ -580,23 +612,26 @@
           <span class="button__text">Сохранить на память</span>
         </button>
       </div>
-       <dialog class="dialog frame" id="open-dialog">
-      <div class="dialog__description">
-        <svg class="card__save-icon" aria-hidden="true" width="21" height="21">
-          <use href="./svg/icons_new.svg#save-icon"></use>
-        </svg>
-        <p class="dialog__text">
-          Вставьте дискету, чтобы продолжить
-        </p>
-      </div>
-      <button
-        class="button-decor decor-ok-button button frame"
-        type="button"
-        onclick="document.getElementById('open-dialog').close()"
-      >
-        <span class="button__text button__decor-text">ок</span>
-      </button>
-    </dialog>
+      <dialog class="dialog frame" id="open-dialog">
+        <div class="dialog__description">
+          <svg
+            class="card__save-icon"
+            aria-hidden="true"
+            width="21"
+            height="21"
+          >
+            <use href="./svg/icons_new.svg#save-icon"></use>
+          </svg>
+          <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
+        </div>
+        <button
+          class="button-decor decor-ok-button button frame"
+          type="button"
+          onclick="document.getElementById('open-dialog').close()"
+        >
+          <span class="button__text button__decor-text">ок</span>
+        </button>
+      </dialog>
     </main>
     <script src="./scripts/like.js"></script>
   </body>
